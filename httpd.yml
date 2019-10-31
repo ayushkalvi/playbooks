@@ -1,0 +1,8 @@
+- hosts: webserver
+  tasks:
+ 	- package:
+		name: httpd
+		status: present
+	- service:
+		name: https
+		status: restarted
